@@ -2,8 +2,9 @@ require('dotenv').config()
 const express = require("express")
 const cors = require("cors")
 const User = require("./models/User")
+const Task = require("./models/Task")
 const dbConnect = require("./config/dbConnect")
-const EmployeeModel = require('./models/Employee')
+
 
 const app = express()
 app.use(express.json())
@@ -25,6 +26,7 @@ app.post('/login', async (req,res) => {
             }
         } else{
             res.json("No record")
+            // alert or notification
         }
     })
 })
@@ -34,10 +36,16 @@ app.post('/register', (req,res) => {
     .then(employees => res.json(employees))
     .catch(err => res.json(err))
 
-    console.log("Acoount registration done!")
+    console.log("Account registration done!")
 })
 
+app.post('/add', (req,res) => {
+    Task.create(req.body)
+    .then(task => res.json(task))
+    .catch(err => res.json(err))
 
+    console.log("Task added successfully")
+})
 
 
 app.listen(port, async() =>{

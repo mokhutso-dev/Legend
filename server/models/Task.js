@@ -1,12 +1,12 @@
 const mongoose = require('mongoose')
 
-const UserSchema = new mongoose.Schema({
+const TaskSchema = new mongoose.Schema({
     task: String,
     descrption: String,
     status: String,
     date: Date,
 })
 
-const userModel = mongoose.model("Task", UserSchema)
+const TaskModel = mongoose.model("Task", TaskSchema)
 
-module.exports = userModel
+module.exports = TaskModel
