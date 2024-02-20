@@ -41,6 +41,19 @@ Web application that aims to streamline task organisation for individuals and te
     - To view all tasks
 
 
+# Screenshot
+- Registration page
+![Register](./screenshots/05.png)
+- Login page
+![Login](./screenshots/04.png)
+- Empty list before adding tasks to the database
+![Empty-list](./screenshots/01.png)
+- Add task page
+![Add](./screenshots/03.png)
+- View all tasks added to the database
+![List](./screenshots/02.png)
+
+
 <br>
 <hr>
 
