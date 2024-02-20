@@ -2,6 +2,11 @@
     background-color: white;
     border: 1px rgb(95, 86, 86) solid;
 }
+.center{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
 .heading{
     display: flex;
     align-items: center;

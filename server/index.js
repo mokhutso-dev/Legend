@@ -33,7 +33,7 @@ app.post('/login', async (req,res) => {
 
 app.post('/register', (req,res) => {
     User.create(req.body)
-    .then(employees => res.json(employees))
+    .then(users => res.json(users))
     .catch(err => res.json(err))
 
     console.log("Account registration done!")
@@ -45,6 +45,14 @@ app.post('/add', (req,res) => {
     .catch(err => res.json(err))
 
     console.log("Task added successfully")
+})
+
+app.get('/getTasks', (req,res) => {
+    Task.find()
+    .then(task => res.json(task))
+    .catch(err => res.json(err))
+
+    console.log("All tasks")
 })
 
 

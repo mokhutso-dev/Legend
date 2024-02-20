@@ -1,7 +1,8 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import axios from 'axios'
 import { useNavigate } from "react-router-dom"
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 import './Style.css'
 
@@ -12,7 +13,13 @@ function Home(){
     //     navigate('/login')
     // }
 
-    const tasks = []
+    const [tasks, SetTasks] = useState([])
+    useEffect(() => {
+        axios.get('http://localhost:5000/getTasks')
+        .then(tasks => SetTasks(tasks.data))
+        .catch(err => console.log(err))
+    }, [])
+
 
     return (
         <div className="body center bg-secondary vh-100">
@@ -23,22 +30,39 @@ function Home(){
                         <Link className="add-link" to={"/add"}> Add task</Link>
                     </button>
                 </div>
-                <div className="content p-3 rounded">
-                    <tr className="tr">
-                        <th>Task Name</th>
-                        <th>Description</th>
-                        <th>Status</th>
-                        <th>Due Date</th>
-                        <th>Actions</th>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    
+                <div className="content w-100 center rounded">
+                    {/* <div className="w-50"></div> */}
+                    <table className="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Task Name
+                                </th>
+                                <th>
+                                    Description
+                                </th>
+                                <th>
+                                    Status
+                                </th>
+                                <th>
+                                    Due Date
+                                </th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {
+                                tasks.map(task => {
+                                    return <tr>
+                                        <td>{task.task}</td>
+                                        <td>{task.description}</td>
+                                        <td>{task.status}</td>
+                                        <td>{task.date}</td>
+                                    </tr>
+                                })
+                            }
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
