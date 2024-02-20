@@ -1,7 +1,7 @@
 # Legend-Task-Manager
 Web application that aims to streamline task organisation for individuals and teams by providing a user-friendly interface and robust backend functionality.
 
-## Tools used
+## Tools used (MERN STACK)
 - Language: Javascript
 - Backend: NodeJS / expressJs
 - Frontend: ReactJS
@@ -9,9 +9,9 @@ Web application that aims to streamline task organisation for individuals and te
 - API Testing : Postman
 
 ##  Installation
-1. git clone
+1. ```https://github.com/mokhutso-dev/Legend.git```
 2. ```cd server && npm install```
-3. ```touch .env``` then add MONGODBURL and PORT as your variables
+3. ```touch .env``` then add MONGODB_URI and PORT as your variables
 3. ```cd client && npm install```
 
 
