@@ -14,7 +14,7 @@ function Signup(){
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:3001/register', {name,surname,email,password})
+        axios.post('http://localhost:5000/register', {name,surname,email,password})
         .then((result) => {console.log(result)
             navigate('/login')
         })
@@ -24,7 +24,7 @@ function Signup(){
     return (
         <div className="center bg-secondary vh-100">
             <div className="bg-white p-3 rounded w-30">
-            <h2>Login</h2>
+            <h2>Register</h2>
                 <p className="center">Enter your details to register your account</p>
                 <form onSubmit={handleSubmit}>
                     <div className="mb-3">

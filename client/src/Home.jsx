@@ -8,6 +8,9 @@ import './Style.css'
 
 function Home(){
     const navigate = useNavigate()
+    // if (!authenticated){
+    //     navigate('/login')
+    // }
 
     return (
         <div className="body center bg-secondary vh-100">
@@ -19,7 +22,7 @@ function Home(){
                     </button>
                 </div>
                 <div className="content p-3 rounded">
-                    <tr className="th">
+                    <tr className="tr">
                         <th>Task Name</th>
                         <th>Description</th>
                         <th>Status</th>

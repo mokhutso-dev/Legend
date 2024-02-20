@@ -31,8 +31,11 @@
 /* Content  */
 .content{
     background-color: white;
-    border: 1px rgb(95, 86, 86) solid;
+    border: 2px rgb(95, 86, 86) solid;
 }
-.th{
+th{
     color: gray;
+}
+td{
+    border-bottom: 2px solid grey;
 }

@@ -14,7 +14,7 @@ function Add(){
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:3001/add', {task,description,status,date})
+        axios.post('http://localhost:5000/add', {task,description,status,date})
         .then((result) => {console.log(result)
             navigate('/')
         })
@@ -63,6 +63,7 @@ function Add(){
                         required
                         className="form-control rounded-0"
                         onChange={(e) => setStatus(e.target.value)} >
+                            <option value="" disabled selected>Select Status</option>
                             <option value="progress">In progress</option>
                             <option value="pending">Pending</option>
                             <option value="completed">Completed</option>

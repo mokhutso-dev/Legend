@@ -17,6 +17,8 @@ function App() {
           <Route path='/register' element={ <Signup/> }></Route>
           <Route path='/login' element={ <Login/> }></Route>
           <Route path='/add' element={ <Add/> }></Route>
+
+          {/* Private Route  */}
       </Routes>
     </BrowserRouter>
     
