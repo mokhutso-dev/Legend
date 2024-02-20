@@ -10,14 +10,39 @@ Web application that aims to streamline task organisation for individuals and te
 
 ##  Installation
 1. git clone
-2. ```npm install```
+2. ```cd server && npm install```
+3. ```touch .env``` then add MONGODBURL and PORT as your variables
+3. ```cd client && npm install```
+
 
 ## How to run the project
-#### How to run the ```client```
+#### Frontend
 - ```cd client```
 - ```npm run dev```
 
-#### How to run the ```server```
+#### Backend
 - ```cd server```
 - ```npm run dev```
+
+
+## Routes
+- ```http://localhost:5173/register```
+    - To create account
+
+- ```http://localhost:5173/login```
+    - To login into your account
+
+
+- ```http://localhost:5173/add```
+    - To add tasks
+
+
+- ```http://localhost:5173/```
+    - To view all tasks
+
+
+<br>
+<hr>
+
+Enjoy my Fullstack Task Manager!
 
