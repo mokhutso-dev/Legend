@@ -12,6 +12,8 @@ function Home(){
     //     navigate('/login')
     // }
 
+    const tasks = []
+
     return (
         <div className="body center bg-secondary vh-100">
             <div className="container p-3 rounded w-30">
@@ -36,20 +38,7 @@ function Home(){
                         <td></td>
                         <td></td>
                     </tr>
-                    <tr>
-                        <td>Task demo name</td>
-                        <td>Demo description</td>
-                        <td>In progress</td>
-                        <td>2024-02-20</td>
-                        <td>...</td>
-                    </tr>
-                    <tr>
-                        <td>Name</td>
-                        <td>Description</td>
-                        <td>Pending</td>
-                        <td>Today</td>
-                        <td>...</td>
-                    </tr>
+                    
                 </div>
             </div>
         </div>
