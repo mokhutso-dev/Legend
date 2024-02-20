@@ -1,12 +1,12 @@
 require('dotenv').config()
 const express = require("express")
 
-const dbConnect = require("./config/dbConnect")
+const userConnect = require("./config/userConnect")
 
 const app = express()
 const port = process.env.PORT || 3000
 
-dbConnect()
+userConnect()
 
 app.listen(port, () =>{
     console.log(`Server is up and running on port ${port}`)

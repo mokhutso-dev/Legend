@@ -1,0 +1,38 @@
+.container{
+    background-color: white;
+    border: 1px rgb(95, 86, 86) solid;
+}
+.heading{
+    display: flex;
+    align-items: center;
+}
+.add-btn{
+   background-color: black;
+   width: 18%;
+   margin-left: 1%;
+}
+.view-link{
+    text-decoration: none;
+}
+.add-link{
+    text-decoration: none;
+    color: white;
+}
+.add-link:hover{
+    color: black;
+}
+.add-btn:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    transition: all 1s ease-in;
+}
+
+/* Content  */
+.content{
+    background-color: white;
+    border: 1px rgb(95, 86, 86) solid;
+}
+.th{
+    color: gray;
+}

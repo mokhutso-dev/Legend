@@ -1,0 +1,49 @@
+.center{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+button{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.google-btn{
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.p-text{
+    margin-left: 10px;
+}
+
+strong .forgot{
+    color: black;
+    font-weight: lighter;
+    text-align: center;
+}
+.google-link{
+    text-decoration: none;
+    color: black;
+}
+.forgot-password{
+    display: flex;
+    justify-content: left;
+    align-items: self-end;
+}
+/* .google-link:hover{
+    color: black;
+}
+.google-btn:hover{
+    color: white;
+    background-color: white;
+    border: 1px solid black;
+    transition: all 1s ease-in;
+} */
+.google-btn:hover{
+    border: 1px solid black;
+} 
+
+
+
