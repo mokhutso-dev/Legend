@@ -46,13 +46,14 @@ function Add(){
                         </label>
                         <br />
                         <textarea name="description" 
+                        id="description"
                         cols="30" 
                         rows="2"
                         placeholder="Enter Description"
                         required
                         className="form-control rounded-0"
                         onChange={(e) => setDescription(e.target.value)}
-                        ></textarea>
+                        />
                     </div>
                     <div className="mb-3">
                         <label htmlFor="status">

@@ -30,7 +30,7 @@ function Home(){
                         <Link className="add-link" to={"/add"}> Add task</Link>
                     </button>
                 </div>
-                <div className="content w-100 center rounded">
+                <div className="content center rounded">
                     {/* <div className="w-50"></div> */}
                     <table className="table">
                         <thead>
@@ -47,7 +47,6 @@ function Home(){
                                 <th>
                                     Due Date
                                 </th>
-                                
                             </tr>
                         </thead>
                         <tbody>
