@@ -20,8 +20,8 @@ function Home(){
         .catch(err => console.log(err))
     }, [])
 
-
     return (
+
         <div className="body center bg-secondary vh-100">
             <div className="container p-3 rounded w-30">
                 <div className="heading">
@@ -47,6 +47,9 @@ function Home(){
                                 <th>
                                     Due Date
                                 </th>
+                                <th>
+                                    Actions
+                                </th>
                             </tr>
                         </thead>
                         <tbody>
@@ -57,6 +60,7 @@ function Home(){
                                         <td>{task.description}</td>
                                         <td>{task.status}</td>
                                         <td>{task.date}</td>
+                                        <td>:</td>
                                     </tr>
                                 })
                             }
