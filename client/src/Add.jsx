@@ -14,7 +14,7 @@ function Add(){
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:5000/add', {task,description,status,date})
+        axios.post('https://legend-sable.vercel.app/add', {task,description,status,date})
         .then((result) => {console.log(result)
             navigate('/')
         })

@@ -15,7 +15,7 @@ function Home(){
 
     const [tasks, SetTasks] = useState([])
     useEffect(() => {
-        axios.get('http://localhost:5000/getTasks')
+        axios.get('https://legend-sable.vercel.app/getTasks')
         .then(tasks => SetTasks(tasks.data))
         .catch(err => console.log(err))
     }, [])

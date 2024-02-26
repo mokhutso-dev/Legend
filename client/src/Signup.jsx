@@ -14,7 +14,7 @@ function Signup(){
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:5000/register', {name,surname,email,password})
+        axios.post('https://legend-sable.vercel.app/register', {name,surname,email,password})
         .then((result) => {console.log(result)
             navigate('/login')
         })
