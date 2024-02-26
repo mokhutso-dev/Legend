@@ -8,7 +8,9 @@ const dbConnect = require("./config/dbConnect")
 
 const app = express()
 app.use(express.json())
+
 app.use(cors())
+
 const port = process.env.PORT || 3000
 
 dbConnect()
@@ -45,6 +47,10 @@ app.post('/add', (req,res) => {
     .catch(err => res.json(err))
 
     console.log("Task added successfully")
+})
+
+app.get('/', (req, res) => {
+    res.json("Welcome to my task manager api")
 })
 
 app.get('/getTasks', (req,res) => {
